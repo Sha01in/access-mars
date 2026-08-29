@@ -22,6 +22,22 @@ if ( !window.Promise ) window.Promise = Promise;
 require( 'aframe' );
 require( 'aframe-daydream-controller-component' );
 
+// Chrome no longer implements WebVR. Force an opaque inline WebGL context so
+// 360 mode draws to the page instead of a transparent canvas (alpha: true was
+// the A-Frame 0.6 default and composites as a blank page after ENTER 360).
+(function patchWebGLRendererForChrome360() {
+	if ( typeof THREE === 'undefined' || !THREE.WebGLRenderer ) return;
+	const OriginalRenderer = THREE.WebGLRenderer;
+	THREE.WebGLRenderer = function( parameters ) {
+		parameters = Object.assign( {}, parameters || {}, { alpha: false } );
+		const renderer = new OriginalRenderer( parameters );
+		renderer.setClearColor( 0x000000, 1 );
+		return renderer;
+	};
+	THREE.WebGLRenderer.prototype = OriginalRenderer.prototype;
+	THREE.WebGLRenderer.prototype.constructor = THREE.WebGLRenderer;
+})();
+
 require( './third_party/three/gltf-loader' );
 require( './third_party/three/draco-loader' );
 
@@ -71,10 +87,14 @@ THREE.TextureLoader.prototype.crossOrigin = undefined;
 THREE.ImageLoader.prototype.crossOrigin = undefined;
 
 // used to show the correct ui overlay in vr mode on mobile devices and daydream
-if ( WebVRConfig ) {
+if ( typeof WebVRConfig !== 'undefined' && WebVRConfig ) {
 	WebVRConfig.CARDBOARD_UI_DISABLED = true;
 	WebVRConfig.ENABLE_DEPRECATED_API = true;
 	WebVRConfig.ROTATE_INSTRUCTIONS_DISABLED = false;
+}
+
+if ( !navigator.getVRDisplays ) {
+	navigator.getVRDisplays = function() { return Promise.resolve( [] ); };
 }
 
 document.addEventListener("DOMContentLoaded", () => {

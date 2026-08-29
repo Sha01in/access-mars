@@ -64,16 +64,34 @@ if ( typeof AFRAME !== 'undefined' && AFRAME ) {
 				this.srcVideoId = 'intro-video-webm';
 			}
 
+			this.srcVideoEl = document.getElementById( this.srcVideoId );
+			this.useHtmlOverlay = Scene.modeType !== 'vr';
+
 			this.video = document.createElement( 'a-entity' );
 			this.video.setAttribute( 'intro-video', { src: this.srcVideoId } );
-			this.video.setAttribute( 'geometry', { primitive: 'plane', width: 16 * 1, height: 9 * 1 });
-			this.video.setAttribute( 'position', '5.00 1.6 0.0' );
-			this.video.setAttribute( 'material', {
-				color: '#FFF',
-				src: "#" + this.srcVideoId,
-				shader: 'flat',
-				side: 'double'
-			});
+
+			if ( this.useHtmlOverlay ) {
+				// Desktop 360: play the intro as an HTML overlay. A-Frame 0.6's
+				// WebGL video texture often composites as a solid white plane on
+				// current Chrome, which looks like a blank scene.
+				this.video.setAttribute( 'visible', false );
+				if ( this.srcVideoEl ) {
+					this.srcVideoEl.classList.add( 'intro-overlay' );
+					this.srcVideoEl.addEventListener( 'ended', () => {
+						this.videoComplete = true;
+						this.tryPlayAnimation();
+					});
+				}
+			} else {
+				this.video.setAttribute( 'geometry', { primitive: 'plane', width: 16 * 1, height: 9 * 1 });
+				this.video.setAttribute( 'position', '5.00 1.6 0.0' );
+				this.video.setAttribute( 'material', {
+					color: '#FFF',
+					src: "#" + this.srcVideoId,
+					shader: 'flat',
+					side: 'double'
+				});
+			}
 
 			this.skipintroHTML = document.querySelector( '#skip-intro' );
 			this.holdToSkip = document.createElement( 'a-entity' );
@@ -95,9 +113,12 @@ if ( typeof AFRAME !== 'undefined' && AFRAME ) {
 			this.holdToSkipBar.setAttribute( 'position', '0.00 -0.6 -1.25 ' );
 			this.holdToSkipBar.setAttribute( 'scale', { x: 0.0 } );
 
-			if ( !AFRAME.utils.device.isMobile() ) {
-				let videoEl = document.getElementById( this.srcVideoId );
-				videoEl.muted = false;
+			if ( !AFRAME.utils.device.isMobile() && this.srcVideoEl ) {
+				this.srcVideoEl.muted = false;
+			}
+
+			if ( Scene.flags && Scene.flags.skip_intro ) {
+				this.videoComplete = true;
 			}
 
 			Scene.on( 'terrain-loaded', event => {
@@ -152,6 +173,7 @@ if ( typeof AFRAME !== 'undefined' && AFRAME ) {
 
 
 		onVideoClick: function() {
+			if ( Scene.flags ) Scene.flags.skip_intro = true;
 			this.videoComplete = true;
 			this.tryPlayAnimation();
 			ga( 'send', 'event', 'video-intro', 'skipped', '' );
@@ -173,10 +195,16 @@ if ( typeof AFRAME !== 'undefined' && AFRAME ) {
 			if ( this.introComplete ) return;
 			this.introComplete = true;
 
-			// Remove the video element
+			// Remove the video element (HTML overlay and/or 3D plane)
 			let videoEl = document.getElementById( this.srcVideoId );
-			videoEl.parentNode.removeChild( videoEl );
-			this.el.removeChild( this.video );
+			if ( videoEl && videoEl.parentNode ) {
+				videoEl.classList.remove( 'intro-overlay' );
+				videoEl.pause();
+				videoEl.parentNode.removeChild( videoEl );
+			}
+			if ( this.video && this.video.parentNode ) {
+				this.el.removeChild( this.video );
+			}
 
 			// Remove skip UI elements
 			this.camera.removeChild( this.holdToSkip );
