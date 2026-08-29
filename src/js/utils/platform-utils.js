@@ -87,6 +87,11 @@ class StaticPlatformUtils {
 	 * name, if any are found.
 	 */
 	getControllerType( callBack ) {
+	    if ( typeof navigator.getVRDisplays !== 'function' ) {
+	        callBack( 'mouse-touch', 'other' );
+	        return;
+	    }
+
 	    navigator.getVRDisplays().then( displays => {
 
             const isFullHDDisplay = displays.length > 0 && displays[ 0 ].isPresenting;

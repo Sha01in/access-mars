@@ -81,7 +81,10 @@ export function initSplash() {
     }
 
 	function hideSplash() {
-        [ splash, footer, about ].forEach( el => el.classList.add( 'invisible' ) );
+        [ splash, footer, about ].forEach( el => {
+            el.classList.add( 'invisible' );
+            el.style.pointerEvents = 'none';
+        });
 	}
 
     function showSplash() {
@@ -97,6 +100,11 @@ export function initSplash() {
 	// this can happen by "Enter 360" or "Try it in 360"
 	function onEnter360() {
 		aScene.play();
+		const camera = document.getElementById( 'camera' );
+		if ( camera ) camera.setAttribute( 'look-controls', 'hmdEnabled: false' );
+		if ( aScene.renderer ) {
+			aScene.renderer.setClearColor( 0x000000, 1 );
+		}
 		aScene.emit( 'enter-360' );
         sceneEntered( '360' );
 	}

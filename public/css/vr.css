@@ -170,6 +170,7 @@ ul, ol {
 }
 .invisible, .hidden {
   visibility: hidden;
+  pointer-events: none;
 }
 
 canvas {
@@ -179,11 +180,31 @@ canvas {
   /*cursor: none;*/
 }
 
-#intro-video-webm {
-  z-index: 2;
+.intro-media {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+  left: -9999px;
+  bottom: -9999px;
 }
 
-#intro-video-mp4 {
+.intro-media.intro-overlay {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  object-fit: contain;
+  background: #000;
+  z-index: 5;
+  pointer-events: none;
+}
+
+#intro-video-webm, #intro-video-mp4 {
   z-index: 2;
 }
 
@@ -192,16 +213,19 @@ canvas {
 }
 
 #skip-intro {
-  z-index: 2;
+  z-index: 6;
   margin: 20px;
   position: absolute;
   bottom: 0;
   font-family: "NowAlt-Regular";
   letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 100;
   color: white;
   cursor: pointer;
+  pointer-events: auto;
+  padding: 10px 14px;
+  background: rgba(0, 0, 0, 0.45);
   border-bottom: 1px solid #FFF;
   text-decoration: none;
 }
