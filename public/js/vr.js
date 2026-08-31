@@ -104590,7 +104590,9 @@ function isFoldableDevice(nav, win) {
 
 	var ua = navigatorObj.userAgent || '';
 	if (/Fold/i.test(ua)) return true;
-	if (navigatorObj.devicePosture) return true;
+	// Presence of the Device Posture API is not enough — desktop Chrome
+	// exposes it with type "continuous". Only a folded hinge is a signal.
+	if (navigatorObj.devicePosture && navigatorObj.devicePosture.type === 'folded') return true;
 
 	try {
 		if (windowObj && windowObj.matchMedia) {
