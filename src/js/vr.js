@@ -17,10 +17,17 @@ import 'whatwg-fetch'
 
 // Promise polyfill
 import Promise from 'promise-polyfill';
+import { patchLookControlsForHandheld } from './utils/look-controls-stabilize';
 if ( !window.Promise ) window.Promise = Promise;
+
+// Kill webvr-polyfill pose prediction before A-Frame boots. The 40ms
+// look-ahead amplifies handheld gyro noise on foldables.
+window.WebVRConfig = window.WebVRConfig || {};
+window.WebVRConfig.PREDICTION_TIME_S = 0;
 
 require( 'aframe' );
 require( 'aframe-daydream-controller-component' );
+patchLookControlsForHandheld();
 
 // Chrome no longer implements WebVR. Force an opaque inline WebGL context so
 // 360 mode draws to the page instead of a transparent canvas (alpha: true was

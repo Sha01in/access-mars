@@ -93101,7 +93101,7 @@ if (typeof AFRAME !== 'undefined' && AFRAME) {
 	});
 }
 
-},{"../core/scene":213,"../shaders/controller-ray-shader":224,"../utils/math-utils":244,"bezier-easing":14}],178:[function(require,module,exports){
+},{"../core/scene":213,"../shaders/controller-ray-shader":224,"../utils/math-utils":245,"bezier-easing":14}],178:[function(require,module,exports){
 'use strict';
 
 var _scene = require('../core/scene');
@@ -93238,7 +93238,7 @@ if (typeof AFRAME !== 'undefined' && AFRAME) {
 	});
 }
 
-},{"../core/scene":213,"../shaders/controller-dot-shader":223,"../utils/platform-utils":245}],179:[function(require,module,exports){
+},{"../core/scene":213,"../shaders/controller-dot-shader":223,"../utils/platform-utils":246}],179:[function(require,module,exports){
 'use strict';
 
 var _scene = require('../core/scene');
@@ -93808,7 +93808,7 @@ if (typeof AFRAME !== 'undefined' && AFRAME) {
 	});
 }
 
-},{"../core/colors":211,"../core/scene":213,"../utils/platform-utils":245}],185:[function(require,module,exports){
+},{"../core/colors":211,"../core/scene":213,"../utils/platform-utils":246}],185:[function(require,module,exports){
 'use strict';
 
 var _scene = require('../core/scene');
@@ -94151,7 +94151,7 @@ if (typeof AFRAME !== 'undefined' && AFRAME) {
 	});
 }
 
-},{"../core/colors":211,"../utils/math-utils":244}],187:[function(require,module,exports){
+},{"../core/colors":211,"../utils/math-utils":245}],187:[function(require,module,exports){
 'use strict';
 
 var _colors = require('../core/colors');
@@ -94431,7 +94431,7 @@ if (typeof AFRAME !== 'undefined' && AFRAME) {
 	});
 }
 
-},{"../core/colors":211,"../core/scene":213,"../meshes/card-mesh":218,"../meshes/card-mesh-image":217,"../utils/platform-utils":245}],188:[function(require,module,exports){
+},{"../core/colors":211,"../core/scene":213,"../meshes/card-mesh":218,"../meshes/card-mesh-image":217,"../utils/platform-utils":246}],188:[function(require,module,exports){
 'use strict';
 
 var _scene = require('../core/scene');
@@ -94752,7 +94752,7 @@ if (typeof AFRAME !== 'undefined' && AFRAME) {
 	});
 }
 
-},{"../core/scene":213,"../utils/platform-utils":245,"eventemitter3":128}],189:[function(require,module,exports){
+},{"../core/scene":213,"../utils/platform-utils":246,"eventemitter3":128}],189:[function(require,module,exports){
 'use strict';
 
 var _scene = require('../core/scene');
@@ -95241,7 +95241,7 @@ if (typeof AFRAME !== 'undefined' && AFRAME) {
 	});
 }
 
-},{"../core/audio-manager":210,"../core/colors":211,"../core/scene":213,"../meshes/card-mesh":218,"../utils/platform-utils":245}],193:[function(require,module,exports){
+},{"../core/audio-manager":210,"../core/colors":211,"../core/scene":213,"../meshes/card-mesh":218,"../utils/platform-utils":246}],193:[function(require,module,exports){
 'use strict';
 
 var _colors = require('../core/colors');
@@ -95522,7 +95522,7 @@ if (typeof AFRAME !== 'undefined' && AFRAME) {
 	});
 }
 
-},{"../c4d/c4d-utils":174,"../core/colors":211,"../loaders/gltf-loader":215,"../shaders/map-path-shader":229,"../utils/math-utils":244,"bezier-easing":14}],195:[function(require,module,exports){
+},{"../c4d/c4d-utils":174,"../core/colors":211,"../loaders/gltf-loader":215,"../shaders/map-path-shader":229,"../utils/math-utils":245,"bezier-easing":14}],195:[function(require,module,exports){
 'use strict';
 
 var _colors = require('../core/colors');
@@ -96152,7 +96152,7 @@ if (typeof AFRAME !== 'undefined' && AFRAME) {
 	});
 }
 
-},{"../core/colors":211,"../core/scene":213,"../meshes/card-mesh":218,"../utils/platform-utils":245}],199:[function(require,module,exports){
+},{"../core/colors":211,"../core/scene":213,"../meshes/card-mesh":218,"../utils/platform-utils":246}],199:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -96530,7 +96530,7 @@ if (typeof AFRAME !== 'undefined' && AFRAME) {
 	});
 }
 
-},{"../c4d/c4d-export-loader":170,"../c4d/c4d-utils":174,"../shaders/uv-highpass-shader":235,"../utils/math-utils":244,"./poi-marker":199,"bezier-easing":14}],201:[function(require,module,exports){
+},{"../c4d/c4d-export-loader":170,"../c4d/c4d-utils":174,"../shaders/uv-highpass-shader":235,"../utils/math-utils":245,"./poi-marker":199,"bezier-easing":14}],201:[function(require,module,exports){
 'use strict';
 
 var _scene = require('../core/scene');
@@ -96679,7 +96679,7 @@ if (typeof AFRAME !== 'undefined' && AFRAME) {
 	});
 }
 
-},{"../c4d/c4d-export-loader":170,"../c4d/c4d-utils":174,"../core/scene":213,"../utils/math-utils":244,"./poi-marker":199,"bezier-easing":14}],202:[function(require,module,exports){
+},{"../c4d/c4d-export-loader":170,"../c4d/c4d-utils":174,"../core/scene":213,"../utils/math-utils":245,"./poi-marker":199,"bezier-easing":14}],202:[function(require,module,exports){
 'use strict';
 
 // Copyright 2017 Google Inc.
@@ -98302,7 +98302,7 @@ var SimpleTerrain = function () {
 	return SimpleTerrain;
 }();
 
-},{"../c4d/c4d-export-loader":170,"../c4d/c4d-utils":174,"../core/common-tex":212,"../core/scene":213,"../shaders/edge-shader":225,"../shaders/terrain-shader":233,"../utils/math-utils":244,"../workers/jpeg-worker":247}],210:[function(require,module,exports){
+},{"../c4d/c4d-export-loader":170,"../c4d/c4d-utils":174,"../core/common-tex":212,"../core/scene":213,"../shaders/edge-shader":225,"../shaders/terrain-shader":233,"../utils/math-utils":245,"../workers/jpeg-worker":248}],210:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -99136,7 +99136,7 @@ var StaticScene = function (_EventEmitter) {
 
 var Scene = exports.Scene = new StaticScene();
 
-},{"../utils/platform-utils":245,"./audio-manager":210,"./tile-manager":214,"eventemitter3":128}],214:[function(require,module,exports){
+},{"../utils/platform-utils":246,"./audio-manager":210,"./tile-manager":214,"eventemitter3":128}],214:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -99505,7 +99505,7 @@ var CardMeshBorder = exports.CardMeshBorder = function (_CardMesh) {
 	return CardMeshBorder;
 }(_cardMesh.CardMesh);
 
-},{"../core/colors":211,"../shaders/card-mesh-border-shader":219,"../utils/math-utils":244,"./card-mesh":218}],217:[function(require,module,exports){
+},{"../core/colors":211,"../shaders/card-mesh-border-shader":219,"../utils/math-utils":245,"./card-mesh":218}],217:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -99785,7 +99785,7 @@ var CardMesh = exports.CardMesh = function (_EventEmitter) {
 	return CardMesh;
 }(_eventemitter.EventEmitter);
 
-},{"../shaders/info-card-flat-shader":228,"../utils/math-utils":244,"bezier-easing":14,"eventemitter3":128}],219:[function(require,module,exports){
+},{"../shaders/info-card-flat-shader":228,"../utils/math-utils":245,"bezier-easing":14,"eventemitter3":128}],219:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -100564,7 +100564,7 @@ var ExitButton = exports.ExitButton = function () {
 	return ExitButton;
 }();
 
-},{"../utils/platform-utils":245,"screenfull":142}],237:[function(require,module,exports){
+},{"../utils/platform-utils":246,"screenfull":142}],237:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -100830,7 +100830,7 @@ function initSplash() {
     return splash;
 }
 
-},{"../core/scene":213,"../utils/platform-utils":245,"./exit-button":236,"qs":138,"screenfull":142,"webvr-ui/build/webvr-ui":168}],238:[function(require,module,exports){
+},{"../core/scene":213,"../utils/platform-utils":246,"./exit-button":236,"qs":138,"screenfull":142,"webvr-ui/build/webvr-ui":168}],238:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -104492,7 +104492,312 @@ function testCompatibility() {
  *
  */
 
-},{"../utils/platform-utils":245}],244:[function(require,module,exports){
+},{"../utils/platform-utils":246}],244:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.shortestAngleDelta = shortestAngleDelta;
+exports.lerpAngle = lerpAngle;
+exports.copyEuler = copyEuler;
+exports.isNearlyIdentityEuler = isNearlyIdentityEuler;
+exports.eulerJumpDeg = eulerJumpDeg;
+exports.isFoldableDevice = isFoldableDevice;
+exports.lookProfileForDevice = lookProfileForDevice;
+exports.markGeometryUnstable = markGeometryUnstable;
+exports.getGeometryUnstableUntil = getGeometryUnstableUntil;
+exports.resetGeometryUnstableForTests = resetGeometryUnstableForTests;
+exports.createStabilizerState = createStabilizerState;
+exports.stepMagicWindowStabilizer = stepMagicWindowStabilizer;
+exports.patchLookControlsForHandheld = patchLookControlsForHandheld;
+// Copyright 2017 Google Inc.
+//
+//   Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+//   You may obtain a copy of the License at
+//
+// http://www.apache.org/licenses/LICENSE-2.0
+//
+//   Unless required by applicable law or agreed to in writing, software
+//   distributed under the License is distributed on an "AS IS" BASIS,
+//   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//   See the License for the specific language governing permissions and
+// limitations under the License.
+
+/**
+ * Handheld / foldable magic-window stabilizer for A-Frame 0.6 look-controls.
+ *
+ * Mobile 360 uses THREE.VRControls + webvr-polyfill FusionPoseSensor with no
+ * deadzone. Foldables (Pixel Fold) also spam orientation while the hinge
+ * moves. This damps only the sensor (HMD) euler; touch yaw/pitch and desktop
+ * mouse-drag are left alone.
+ */
+
+var PHONE_LOOK = exports.PHONE_LOOK = {
+	deadzone: 1.75,
+	gain: 0.32,
+	filter: 0.30,
+	maxStep: 5
+};
+
+var FOLDABLE_LOOK = exports.FOLDABLE_LOOK = {
+	deadzone: 3.0,
+	gain: 0.16,
+	filter: 0.18,
+	maxStep: 3.5
+};
+
+var FOLD_FREEZE_MS = exports.FOLD_FREEZE_MS = 500;
+var POSTURE_FREEZE_MS = exports.POSTURE_FREEZE_MS = 650;
+var JUMP_IGNORE_DEG = exports.JUMP_IGNORE_DEG = 35;
+
+var geometryUnstableUntil = 0;
+var geometryListenersInstalled = false;
+
+function shortestAngleDelta(from, to) {
+	var delta = to - from;
+	while (delta > 180) {
+		delta -= 360;
+	}while (delta < -180) {
+		delta += 360;
+	}return delta;
+}
+
+function lerpAngle(from, to, t) {
+	return from + shortestAngleDelta(from, to) * t;
+}
+
+function copyEuler(src) {
+	return { x: src.x, y: src.y, z: src.z };
+}
+
+function isNearlyIdentityEuler(euler) {
+	return Math.abs(euler.x) < 0.5 && Math.abs(euler.y) < 0.5 && Math.abs(euler.z) < 0.5;
+}
+
+function eulerJumpDeg(from, to) {
+	var dx = shortestAngleDelta(from.x, to.x);
+	var dy = shortestAngleDelta(from.y, to.y);
+	var dz = shortestAngleDelta(from.z, to.z);
+	return Math.sqrt(dx * dx + dy * dy + dz * dz);
+}
+
+function isFoldableDevice(nav, win) {
+	var navigatorObj = nav || (typeof navigator !== 'undefined' ? navigator : null);
+	var windowObj = win || (typeof window !== 'undefined' ? window : null);
+	if (!navigatorObj) return false;
+
+	var ua = navigatorObj.userAgent || '';
+	if (/Fold/i.test(ua)) return true;
+	// Presence of the Device Posture API is not enough — desktop Chrome
+	// exposes it with type "continuous". Only a folded hinge is a signal.
+	if (navigatorObj.devicePosture && navigatorObj.devicePosture.type === 'folded') return true;
+
+	try {
+		if (windowObj && windowObj.matchMedia) {
+			return windowObj.matchMedia('(horizontal-viewport-segments: 2)').matches || windowObj.matchMedia('(vertical-viewport-segments: 2)').matches || windowObj.matchMedia('(spanning: single-fold-horizontal)').matches || windowObj.matchMedia('(spanning: single-fold-vertical)').matches;
+		}
+	} catch (err) {
+		// matchMedia may throw for unknown media features
+	}
+
+	return false;
+}
+
+function lookProfileForDevice(nav, win) {
+	return isFoldableDevice(nav, win) ? FOLDABLE_LOOK : PHONE_LOOK;
+}
+
+function markGeometryUnstable(durationMs, nowMs) {
+	var now = nowMs !== undefined ? nowMs : typeof performance !== 'undefined' ? performance.now() : Date.now();
+	var until = now + (durationMs || FOLD_FREEZE_MS);
+	if (until > geometryUnstableUntil) geometryUnstableUntil = until;
+}
+
+function getGeometryUnstableUntil() {
+	return geometryUnstableUntil;
+}
+
+function resetGeometryUnstableForTests() {
+	geometryUnstableUntil = 0;
+}
+
+function createStabilizerState(profile) {
+	var cfg = profile || PHONE_LOOK;
+	return {
+		filtered: null,
+		applied: null,
+		prevRaw: null,
+		identityLock: true,
+		needsRebase: false,
+		deadzone: cfg.deadzone,
+		gain: cfg.gain,
+		filter: cfg.filter,
+		maxStep: cfg.maxStep
+	};
+}
+
+/**
+ * Advance the handheld look filter.
+ * `freezeUntil` is an absolute timestamp in the same clock as `now`.
+ */
+function stepMagicWindowStabilizer(state, raw, now, freezeUntil) {
+	if (!state.applied) {
+		state.applied = copyEuler(raw);
+		state.filtered = copyEuler(raw);
+		state.prevRaw = copyEuler(raw);
+		state.identityLock = isNearlyIdentityEuler(raw);
+		return copyEuler(state.applied);
+	}
+
+	if (freezeUntil && now < freezeUntil) {
+		state.needsRebase = true;
+		state.prevRaw = copyEuler(raw);
+		return copyEuler(state.applied);
+	}
+
+	if (state.needsRebase) {
+		state.applied = copyEuler(raw);
+		state.filtered = copyEuler(raw);
+		state.prevRaw = copyEuler(raw);
+		state.needsRebase = false;
+		state.identityLock = isNearlyIdentityEuler(raw);
+		return copyEuler(state.applied);
+	}
+
+	if (state.identityLock && !isNearlyIdentityEuler(raw)) {
+		state.applied = copyEuler(raw);
+		state.filtered = copyEuler(raw);
+		state.prevRaw = copyEuler(raw);
+		state.identityLock = false;
+		return copyEuler(state.applied);
+	}
+
+	if (state.prevRaw && eulerJumpDeg(state.prevRaw, raw) > JUMP_IGNORE_DEG) {
+		if (!state.identityLock) {
+			state.prevRaw = copyEuler(raw);
+			return copyEuler(state.applied);
+		}
+	}
+
+	state.prevRaw = copyEuler(raw);
+	state.filtered.x = lerpAngle(state.filtered.x, raw.x, state.filter);
+	state.filtered.y = lerpAngle(state.filtered.y, raw.y, state.filter);
+	state.filtered.z = lerpAngle(state.filtered.z, raw.z, state.filter);
+
+	followAxis(state, 'x');
+	followAxis(state, 'y');
+	followAxis(state, 'z');
+
+	return copyEuler(state.applied);
+}
+
+function followAxis(state, axis) {
+	var delta = shortestAngleDelta(state.applied[axis], state.filtered[axis]);
+	if (Math.abs(delta) <= state.deadzone) return;
+
+	var excess = delta - Math.sign(delta) * state.deadzone;
+	var step = state.maxStep;
+	if (excess > step) excess = step;
+	if (excess < -step) excess = -step;
+	state.applied[axis] += excess * state.gain;
+}
+
+function installGeometryListeners() {
+	if (geometryListenersInstalled || typeof window === 'undefined') return;
+	geometryListenersInstalled = true;
+
+	var mark = function mark() {
+		markGeometryUnstable(FOLD_FREEZE_MS);
+	};
+	window.addEventListener('orientationchange', mark, { passive: true });
+	window.addEventListener('resize', mark, { passive: true });
+
+	if (window.screen && screen.orientation && screen.orientation.addEventListener) {
+		screen.orientation.addEventListener('change', mark);
+	}
+
+	if (window.visualViewport) {
+		window.visualViewport.addEventListener('resize', mark, { passive: true });
+	}
+
+	if (navigator.devicePosture && navigator.devicePosture.addEventListener) {
+		navigator.devicePosture.addEventListener('change', function () {
+			markGeometryUnstable(POSTURE_FREEZE_MS);
+		});
+	}
+
+	try {
+		if (window.matchMedia) {
+			var posture = window.matchMedia('(device-posture: folded)');
+			if (posture && posture.addEventListener) {
+				posture.addEventListener('change', function () {
+					markGeometryUnstable(POSTURE_FREEZE_MS);
+				});
+			}
+		}
+	} catch (err) {
+		// ignore unsupported media queries
+	}
+}
+
+function applyStabilizedMobileOrientation(comp) {
+	var radToDeg = THREE.Math.radToDeg;
+	var hmdEuler = comp.hmdEuler;
+	var hmdQuaternion = comp.hmdQuaternion;
+
+	hmdQuaternion.copy(comp.dolly.quaternion);
+	hmdEuler.setFromQuaternion(hmdQuaternion, 'YXZ');
+
+	var raw = {
+		x: radToDeg(hmdEuler.x),
+		y: radToDeg(hmdEuler.y),
+		z: radToDeg(hmdEuler.z)
+	};
+
+	if (!comp._mwStab) {
+		comp._mwStab = createStabilizerState(lookProfileForDevice());
+	}
+
+	var now = typeof performance !== 'undefined' ? performance.now() : Date.now();
+	var damped = stepMagicWindowStabilizer(comp._mwStab, raw, now, geometryUnstableUntil);
+
+	comp.el.setAttribute('rotation', {
+		x: damped.x + radToDeg(comp.pitchObject.rotation.x),
+		y: damped.y + radToDeg(comp.yawObject.rotation.y),
+		z: damped.z
+	});
+}
+
+/**
+ * Patch A-Frame look-controls so only the mobile sensor path is damped.
+ * Desktop (and any non-mobile) still uses the original mouse-drag code.
+ */
+function patchLookControlsForHandheld() {
+	if (typeof AFRAME === 'undefined' || !AFRAME.components || !AFRAME.components['look-controls']) {
+		return false;
+	}
+
+	var proto = AFRAME.components['look-controls'].Component.prototype;
+	if (proto.__mwStabilized) return true;
+	proto.__mwStabilized = true;
+
+	installGeometryListeners();
+
+	var original = proto.updateOrientation;
+	proto.updateOrientation = function () {
+		var sceneEl = this.el && this.el.sceneEl;
+		if (!sceneEl || !sceneEl.isMobile) {
+			return original.call(this);
+		}
+		applyStabilizedMobileOrientation(this);
+	};
+
+	return true;
+}
+
+},{}],245:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -104594,7 +104899,7 @@ var StaticMathUtils = function () {
 
 var MathUtils = exports.MathUtils = new StaticMathUtils();
 
-},{}],245:[function(require,module,exports){
+},{}],246:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -104771,7 +105076,7 @@ var StaticPlatformUtils = function () {
 
 var PlatformUtils = exports.PlatformUtils = new StaticPlatformUtils();
 
-},{"../core/scene":213}],246:[function(require,module,exports){
+},{"../core/scene":213}],247:[function(require,module,exports){
 'use strict';
 
 require('whatwg-fetch');
@@ -104780,12 +105085,19 @@ var _promisePolyfill = require('promise-polyfill');
 
 var _promisePolyfill2 = _interopRequireDefault(_promisePolyfill);
 
+var _lookControlsStabilize = require('./utils/look-controls-stabilize');
+
 var _splash = require('./splash/splash');
 
 var _compatibility = require('./utils/compatibility');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// Promise polyfill
+if (!window.Promise) window.Promise = _promisePolyfill2.default;
+
+// Kill webvr-polyfill pose prediction before A-Frame boots. The 40ms
+// look-ahead amplifies handheld gyro noise on foldables.
 // Copyright 2017 Google Inc.
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -104801,13 +105113,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // limitations under the License.
 
 // Fetch polyfill
-if (!window.Promise) window.Promise = _promisePolyfill2.default;
-
-// Promise polyfill
-
+window.WebVRConfig = window.WebVRConfig || {};
+window.WebVRConfig.PREDICTION_TIME_S = 0;
 
 require('aframe');
 require('aframe-daydream-controller-component');
+(0, _lookControlsStabilize.patchLookControlsForHandheld)();
 
 // Chrome no longer implements WebVR. Force an opaque inline WebGL context so
 // 360 mode draws to the page instead of a transparent canvas (alpha: true was
@@ -104888,7 +105199,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	(0, _splash.initSplash)();
 });
 
-},{"./components/better-raycaster":175,"./components/boundary-sphere":176,"./components/controller-arc":177,"./components/controller-dot":178,"./components/controller-parabola":179,"./components/controller-ray":180,"./components/debug-trace":181,"./components/fade-to-black":182,"./components/frustum":183,"./components/hitbox":184,"./components/horizon-marker":185,"./components/info-card":187,"./components/info-card-text":186,"./components/intro-player":188,"./components/intro-video":189,"./components/look-at-target":190,"./components/map-background":191,"./components/map-card":192,"./components/map-marker":193,"./components/map-path":194,"./components/map-site-card":195,"./components/opacity":196,"./components/orientation-card":198,"./components/orientation-card-column":197,"./components/poi-marker":199,"./components/poi-pole":200,"./components/poi-spin-widget":201,"./components/poi-title-text":202,"./components/rover":204,"./components/rover-poi":203,"./components/scene-intro-label":205,"./components/sky-blackout":206,"./components/sky-gradient":207,"./components/sky-wireframe":208,"./components/terrain":209,"./splash/splash":237,"./third_party/three/draco-loader":241,"./third_party/three/gltf-loader":242,"./utils/compatibility":243,"aframe":2,"aframe-daydream-controller-component":1,"promise-polyfill":136,"whatwg-fetch":169}],247:[function(require,module,exports){
+},{"./components/better-raycaster":175,"./components/boundary-sphere":176,"./components/controller-arc":177,"./components/controller-dot":178,"./components/controller-parabola":179,"./components/controller-ray":180,"./components/debug-trace":181,"./components/fade-to-black":182,"./components/frustum":183,"./components/hitbox":184,"./components/horizon-marker":185,"./components/info-card":187,"./components/info-card-text":186,"./components/intro-player":188,"./components/intro-video":189,"./components/look-at-target":190,"./components/map-background":191,"./components/map-card":192,"./components/map-marker":193,"./components/map-path":194,"./components/map-site-card":195,"./components/opacity":196,"./components/orientation-card":198,"./components/orientation-card-column":197,"./components/poi-marker":199,"./components/poi-pole":200,"./components/poi-spin-widget":201,"./components/poi-title-text":202,"./components/rover":204,"./components/rover-poi":203,"./components/scene-intro-label":205,"./components/sky-blackout":206,"./components/sky-gradient":207,"./components/sky-wireframe":208,"./components/terrain":209,"./splash/splash":237,"./third_party/three/draco-loader":241,"./third_party/three/gltf-loader":242,"./utils/compatibility":243,"./utils/look-controls-stabilize":244,"aframe":2,"aframe-daydream-controller-component":1,"promise-polyfill":136,"whatwg-fetch":169}],248:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -104942,4 +105253,4 @@ var StaticJPEGWorker = function StaticJPEGWorker() {
 
 var JPEGWorker = exports.JPEGWorker = new StaticJPEGWorker();
 
-},{}]},{},[246]);
+},{}]},{},[247]);
